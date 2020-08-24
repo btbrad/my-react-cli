@@ -4,7 +4,10 @@
   "description": "my react command line",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --progress --colors",
+    "build": "npm run clean && cross-env NODE_ENV=production webpack -p --progress --colors",
+    "clean": "rm -rf build/",
+    "lint": "eslint src"
   },
   "repository": {
     "type": "git",
