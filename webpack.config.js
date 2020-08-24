@@ -1,5 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const autoprefixer = require('autoprefixer')
 const pkg = require('./package.json');
@@ -125,9 +126,11 @@ module.exports = {
       filename: 'assets/css/style.[hash:8].css',
       chunkFilename: 'assets/css/[id].[hash:8].css',
     }),
-    new CopyWebpackPlugin([
-      { from: 'favicon.ico' },
-    ]),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: 'favicon.ico', to: OUTPUT_DIR }
+      ]
+    }),
     new HtmlWebpackPlugin({
       title: 'React App',
       filename: './index.html',
