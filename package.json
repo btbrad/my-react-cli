@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/btbrad/my-react-cli/issues"
   },
-  "homepage": "https://github.com/btbrad/my-react-cli#readme"
+  "homepage": "https://github.com/btbrad/my-react-cli#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^4.3.0"
+  }
 }
