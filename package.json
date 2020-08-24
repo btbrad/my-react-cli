@@ -1,0 +1,19 @@
+{
+  "name": "my-react-cli",
+  "version": "1.0.0",
+  "description": "my react command line",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/btbrad/my-react-cli.git"
+  },
+  "author": "btbrad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/btbrad/my-react-cli/issues"
+  },
+  "homepage": "https://github.com/btbrad/my-react-cli#readme"
+}
